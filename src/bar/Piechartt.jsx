@@ -18,8 +18,7 @@ export default function PieChartBar() {
     {
       type: "Half-Yearly",
       value: 22,
-    },
-  ];
+    }];
   const config = {
     appendPadding: 90,
     data: pieChartData,
@@ -37,17 +36,14 @@ export default function PieChartBar() {
       },
     },
     interactions: [{ type: "element-selected" }, { type: "element-active" }],
-    statistic: 
-      null
-    
+    statistic: null
   };
   return (
     <>
       <Wrapper>
-	  <div style={{ width: "100%", maxWidth: "468px" }}>
-
-        <Pie {...config} />
-		</div>
+        <div style={{ width: "100%", maxWidth: "468px" }}>
+          <Pie {...config} />
+        </div>
       </Wrapper>
     </>
   );
